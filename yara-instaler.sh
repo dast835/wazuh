@@ -26,6 +26,7 @@ wget https://github.com/dast835/wazuh/raw/main/yara.sh
 chown root:wazuh yara.sh
 chmod 750 yara.sh
 mkdir /tmp/quarantined
+systemctl restart wazuh-agent.service
 echo "Instalation completed"
 
 
