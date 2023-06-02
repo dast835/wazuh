@@ -10,7 +10,7 @@ cd /usr/local/bin/yara-4.3.1/
 make
 make install
 cd /usr/local
-https://github.com/dast835/wazuh/raw/main/yara_rules_updater.sh
+wget https://github.com/dast835/wazuh/raw/main/yara_rules_updater.sh
 
 ##########################
 chmod +x /usr/local/yara_rules_updater.sh
