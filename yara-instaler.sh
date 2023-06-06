@@ -12,6 +12,8 @@ make install
 cd /usr/local
 git clone https://github.com/Neo23x0/signature-base.git
 wget https://github.com/dast835/wazuh/raw/main/yara_rules_updater.sh
+####
+crontab -l | { cat; echo "0 3 * * *  /bin/bash /usr/local/yara_rules_updater.sh"; } | crontab -
 
 ##########################
 chmod +x /usr/local/yara_rules_updater.sh
