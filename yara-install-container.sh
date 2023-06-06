@@ -25,7 +25,7 @@ chown root:wazuh yara.sh
 chmod 750 yara.sh
 mkdir /tmp/quarantined
 ###
-crontab -l | { cat; echo "0 3 * * *  bash /usr/local/yara_rules_updater.sh"; } | crontab -
+crontab -l | { cat; echo "0 3 * * *  /bin/bash /usr/local/yara_rules_updater.sh"; } | crontab -
 ###
 /var/ossec/bin/wazuh-control stop
 /var/ossec/bin/wazuh-control start
